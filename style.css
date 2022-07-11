@@ -159,6 +159,7 @@ line-height: 21px;
 .page {
     flex: 1 1 auto;
 }
+/*  section preview-------------------------------------------------------- */
 .preview {
     position: relative;
     height: 765px;
@@ -235,11 +236,118 @@ box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0
 border-radius: 10px;
 margin: 0 18px 0 0;
 }
-/* .image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.header-burger{
+    display: none;
+}
+
+@media (max-width:390px){
+    .header-burger{
+display: block;
+position: relative;
+width: 25px;
+height: 25px;
+    }
+    .header-burger span{
+position: absolute;
+background-color: #fff;
+position: absolute;
+left: 0;
+width: 100%;
+height: 2px;
+top: 9px;
+    }
+    .header-burger:before,
+    .header-burger:after{
+content: " ";
+background-color: #fff;
+position: absolute;
+width: 100%;
+height: 2px;
+left: 0;
+    }
+   .header-burger:before{
     top: 0;
-    left: 0;
-} */
+   }
+   .header-burger::after{
+    bottom: 0;
+   }
+    
+    .container {
+    }
+    .logo-port {
+    }
+    .menu {
+    }
+    .menu-list {
+    }
+    .menu-item {
+    }
+    .menu-link {
+    }
+    .header-button {
+    }
+    .page {
+    }
+    .preview {
+    }
+    .main-block-body {
+    }
+    .preview-content {
+    }
+    .preview-text {
+    }
+    .preview-find {
+    }
+    .preview-find-text {
+    }
+    .preview-button {
+    }
+}
+/* --section step-------------------------------------------------------------------------- */
+
+.steps {
+}
+
+.steps-text {
+    font-family: 'Red Hat Text';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: calc(53/40*100%);
+color: #F2785C;
+
+}
+.steps-card{
+    width: 100px;
+height: 100px;
+left: calc(50% - 100px/2);
+top: calc(50% - 100px/2);
+background: #F2785C;
+border-radius: 16px;
+}
+.steps-list {
+}
+.steps-list p{
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(24/20*100%);
+    color: #0D606F;
+}
+.step-velo {
+}
+.logo-velo {
+}
+.step-calendar {
+}
+.logo-calendar {
+}
+.step-avia {
+}
+.logo-avia {
+}
+
+
+
 
