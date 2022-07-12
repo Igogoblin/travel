@@ -167,7 +167,7 @@ line-height: 21px;
     background-image: url(./img/garrett-parker-preview.jpg);
     background-size: cover;
     background-position: center;
-    
+    margin: 0 0 80px 0;
 }
 
 .main-block-body {
@@ -306,8 +306,15 @@ left: 0;
 /* --section step-------------------------------------------------------------------------- */
 
 .steps {
+  
 }
-
+.steps-container{
+    max-width: 1200px;
+    width: 100%;
+  display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
 .steps-text {
     font-family: 'Red Hat Text';
 font-style: normal;
@@ -315,7 +322,14 @@ font-weight: 500;
 font-size: 40px;
 line-height: calc(53/40*100%);
 color: #F2785C;
-
+display: flex;
+justify-content: center;
+margin: 0 0 40px 0;
+}
+.step-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .steps-card{
     width: 100px;
@@ -324,8 +338,14 @@ left: calc(50% - 100px/2);
 top: calc(50% - 100px/2);
 background: #F2785C;
 border-radius: 16px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 0 30px 0;
 }
 .steps-list {
+    display: flex;
+    justify-content: space-between;
 }
 .steps-list p{
     font-family: 'Aleo';
