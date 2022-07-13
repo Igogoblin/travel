@@ -40,11 +40,9 @@ a {
 }
 .wrapper {
     min-height: 100%;
-    
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
 }
 
 .container {
@@ -62,7 +60,7 @@ a {
     min-height: 90px;
     left: 0;
     top: 0;
-    z-index: 50;
+    z-index: 10;
     background: rgba(242, 120, 92, 0.7);
 box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 color: #ffffff;
@@ -177,7 +175,7 @@ line-height: 21px;
   margin: 122px 0 0 0;
 }
 .preview-content {
-    
+    z-index: 1;
 }
 h1 {
     font-family: 'Aleo';
@@ -241,6 +239,9 @@ margin: 0 18px 0 0;
 }
 
 @media (max-width:390px){
+    .container{
+        max-width: 360px;
+    }
     .header-burger{
 display: block;
 position: relative;
@@ -273,8 +274,11 @@ left: 0;
    }
     
     .container {
+       
     }
     .logo-port {
+         position: relative;
+        z-index: 11;
     }
     .menu {
     }
@@ -289,18 +293,35 @@ left: 0;
     .page {
     }
     .preview {
+        position: relative;
+        z-index: 11;
+        margin: 0 0 20px 0;
     }
     .main-block-body {
     }
     .preview-content {
-    }
-    .preview-text {
-    }
-    .preview-find {
+        text-indent: -9999px; /*или -999em*/
+        white-space: nowrap; 
     }
     .preview-find-text {
+        padding: 0 0 0 16px;
+        
+    }
+    .preview-find {
+        font-size: 14px;
+line-height: calc(17/14*100%);
+    }
+    .preview-find-text {
+        
     }
     .preview-button {
+        height: 70px;
+        width: 24px;
+       
+        
+        
+        font-size: 11px;
+        line-height: calc(15/11*100%); 
     }
 }
 /* --section step-------------------------------------------------------------------------- */
@@ -326,6 +347,7 @@ display: flex;
 justify-content: center;
 margin: 0 0 40px 0;
 }
+
 .step-cards{
     display: flex;
     flex-direction: column;
@@ -334,8 +356,8 @@ margin: 0 0 40px 0;
 .steps-card{
     width: 100px;
 height: 100px;
-left: calc(50% - 100px/2);
-top: calc(50% - 100px/2);
+/* left: calc(50% - 100px/2);
+top: calc(50% - 100px/2); */
 background: #F2785C;
 border-radius: 16px;
 display: flex;
@@ -346,6 +368,7 @@ margin: 0 0 30px 0;
 .steps-list {
     display: flex;
     justify-content: space-between;
+    margin: 0 0 97px 0;
 }
 .steps-list p{
     font-family: 'Aleo';
@@ -354,6 +377,27 @@ margin: 0 0 30px 0;
     font-size: 20px;
     line-height: calc(24/20*100%);
     color: #0D606F;
+}
+@media (max-width: 390px){
+    
+    .steps-text {
+font-size: 14px;
+line-height: calc(19/14*100%);
+margin: 0 0 20px 0;
+    }
+    .steps-list p {
+        font-size: 10px;
+        line-height: calc(12/10*100%);
+    }
+    .steps-card{
+        width: 70px;
+    height: 70px;
+    margin: 0 0 20px 0;
+    }
+    .steps-card img{
+        width: 50%;
+        height: 50%;
+    }
 }
 .step-velo {
 }
@@ -367,7 +411,337 @@ margin: 0 0 30px 0;
 }
 .logo-avia {
 }
+/* -------destination-------------------------------------------------------------- */
+
+.destinations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.distination-text {
+    font-family: 'Red Hat Text';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: calc(53/40*100%);
+color: #F2785C;
+display: flex;
+justify-content: center;
+margin: 0 0 46px 0;
+}
+@media (max-width:390px){
+    .distination-text{
+        font-size: 14px;
+line-height: calc(19/14*100%);
+margin: 0 0 20px 0;
+    }
+}
+.karusel {
+    height: 800px;
+    width: 2520px;
+margin-left: -540px;
+display: flex;
+justify-content: space-between;
+   margin: 0 0 24px 0;
+}
+.pages{
+    width: 800px;
+    height: 800px;
+    border-radius: 16px;
+    display: flex;
+   align-items: flex-end;
+
+}
+.pages span{
+    font-family: 'Red Hat Text';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: calc(42/32*100%);
+padding: 0 0 40px 15px;
+color: #FFFFFF;
+}
+.spain {
+    background: url(./img/Spain.jpg);
+    background-size: cover;
+    display: flex;
+   align-items: flex-end;
+   gap: 60px;
+}
+.japan {
+    background: url(./img/japan.jpg);
+    background-size: cover;
+    display: flex;
+   align-items: flex-end;
+   gap: 60px;
+}
+.usa {
+    background: url(./img/usa.jpg);
+    background-size: cover;
+    display: flex;
+   align-items: flex-end;
+   gap: 60px;
+}
+.destination-buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.mini-karusel {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 40px 0;
+}
+.button-find-more {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 80px 0;
+}
+.minik{
+    width: 20px;
+    height: 20px;
+    background: #F2785C;
+    border-radius: 50%;
+}
+.minik:not(:last-child){
+    margin: 0 10px 0 0;
+}
+.min-kar-one, .min-kar-tre{
+    opacity: 0.7;
+}
+.but{
+    width: 228px;
+height: 59px;
+background: #0D606F;
+box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+border-radius: 10px;
+font-family: 'Red Hat Text';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: calc(32/24*100%);
+color: #FFFFFF;
+
+}
+.inside-button{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.inside-button img{
+    margin: 0 10px 0 0;
+}
+@media (max-width:390px){
+
+}
+/* -----storeis---------------------------------------------------------------------- */
+.steps {
+}
+.container {
+}
+.steps-container {
+}
+.steps-text {
+}
+.steps-list {
+}
+.step-velo {
+}
+.step-cards {
+}
+.logo-velo {
+}
+.steps-card {
+}
+.step-calendar {
+}
+.logo-calendar {
+}
+.step-avia {
+}
+.logo-avia {
+}
+.destinations {
+}
+.distination-text {
+}
+.karusel {
+}
+.spain {
+}
+.pages {
+}
+.japan {
+}
+.usa {
+}
+.destination-buttons {
+}
+.mini-karusel {
+}
+.min-kar-one {
+}
+.minik {
+}
+.min-kar-two {
+}
+.min-kar-tre {
+}
+.button-find-more {
+}
+.destination-button {
+}
+.but {
+}
+.inside-button {
+}
 
 
 
+.stories {
+}
+.stories-text {
+    display: flex;
+    justify-content: center;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(53/40*100%);
+    color: #F2785C;
+    margin: 0 0 52px 0;
+    }
+    @media (max-width:390px){
+        .stories-text {
+            font-size: 14px;
+    line-height: calc(19/14*100%);
+            margin: 0 0 15px 0;
+        }
+    }
 
+.stories-image {
+    height: 1332px;
+  
+    background: url(./img/storie.jpg);
+    background-size: cover;
+}
+.storias-white {
+    background-color: #fff;
+    opacity: 0.7;
+    height: 1270px;
+
+
+}
+.stories-list {
+    max-height: 1270px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.stori {
+    display: flex;
+    margin: 0 0 30px 0;
+}
+.stor-image {
+    max-width: 400px;
+    width: 100%;
+    max-height: 250px;
+    height: 100%;
+    filter: drop-shadow(0px 4px 4px #0D606F);
+border-radius: 16px;
+z-index: 2;
+margin: 0 40px 0 0;
+}
+.stories-item{
+    font-family: 'Aleo';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: calc(42/35*100%);
+color: #0D606F;
+}
+.stories-item h3{
+    margin: 0 0 24px 0;
+}
+.stories-item span{
+    font-family: 'Aleo';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: calc(24/20*100%);
+text-decoration-line: underline;
+
+color: #0D606F;
+}
+@media (max-width:390px){
+    .stori {
+        margin: 0 0 15px 0;
+    }
+    .stor-image{
+        margin: 0 10px 0 0;
+    }
+    .stories-item{
+        font-weight: 700;
+        font-size: 11px;
+        line-height: calc(13/11*100%);
+    }
+    .stories-item h3{
+        margin: 0 0 10px 0;
+    }
+    .stor-text {
+        font-size: 9px;
+        line-height: calc(11/9*100%);
+    }
+}
+.first-image {
+    max-width: 400px;
+    width: 100%;
+    height: 250px;
+    background: url(./img/storieSea.jpg);
+    background-size: cover;
+}
+.stor-text {
+    font-family: 'Aleo';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: calc(24/20*100%);
+color: #0D606F;
+
+}
+.second-image {
+    max-width: 400px;
+    width: 100%;
+    height: 250px;
+    background: url(./img/storieRoad.jpg);
+    background-size: cover;
+}
+.thirdth-image {
+    max-width: 400px;
+    width: 100%;
+    height: 250px;
+    background: url(./img/storieMount.jpg);
+    background-size: cover;
+}
+.fourth-image {
+    max-width: 400px;
+    width: 100%;
+    height: 250px;
+    background: url(./img/storieTexas.jpg);
+    background-size: cover;
+}
+.button-see-more{
+    display: flex;
+    justify-content: center;
+}
+.footer {
+    margin-top: -49px;
+    display: flex;
+    justify-content: center;
+   align-items: center; 
+}
+.footer ul{
+    display: flex;
+    justify-content: space-between;
+}
