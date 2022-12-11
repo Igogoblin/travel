@@ -100,8 +100,7 @@ padding: 0 0 0 35px;
     display: flex;
 }
 .menu a{
-    color: #ffffff;
-    
+    color: #ffffff; 
 }
 
 .menu-list {
@@ -273,25 +272,11 @@ left: 0;
     bottom: 0;
    }
     
-    .container {
-       
-    }
     .logo-port {
          position: relative;
         z-index: 11;
     }
-    .menu {
-    }
-    .menu-list {
-    }
-    .menu-item {
-    }
-    .menu-link {
-    }
-    .header-button {
-    }
-    .page {
-    }
+
     .preview {
         position: relative;
         z-index: 11;
@@ -317,18 +302,12 @@ line-height: calc(17/14*100%);
     .preview-button {
         height: 70px;
         width: 24px;
-       
-        
-        
         font-size: 11px;
         line-height: calc(15/11*100%); 
     }
 }
 /* --section step-------------------------------------------------------------------------- */
 
-.steps {
-  
-}
 .steps-container{
     max-width: 1200px;
     width: 100%;
@@ -399,18 +378,7 @@ margin: 0 0 20px 0;
         height: 50%;
     }
 }
-.step-velo {
-}
-.logo-velo {
-}
-.step-calendar {
-}
-.logo-calendar {
-}
-.step-avia {
-}
-.logo-avia {
-}
+
 /* -------destination-------------------------------------------------------------- */
 
 .destinations {
